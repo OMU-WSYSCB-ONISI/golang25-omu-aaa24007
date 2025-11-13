@@ -1,1 +1,59 @@
-Sample Test File over Golang http.FileServer
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webシステム構築基礎 第2回課題</title>
+    <script>
+    function updateClock(){
+         var now = new Date();
+         var hours = now.getHours();
+         var minutes = now.getMinutes();
+         var seconds = now.getSeconds();
+
+         var timeString = hours + ':' + minutes + ':' + seconds;
+         document.getElementById('clock').innerHTML = timeString;
+    }
+    setInterval(updateClock, 1000);
+    window.onload = updateClock;
+    </script>
+</head>
+<body>
+    <h3>時刻</h3>
+    <div id="clock" style="font-size: 48px; font-weight: bold; color: green;">
+        00:00:00
+    </div>
+    <h1>🌐 Phase 0-1: HTML基礎確認</h1>
+    <img src="https://media.istockphoto.com/id/1167344045/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E3%83%81%E3%83%BC%E3%82%BA%E3%82%B1%E3%83%BC%E3%82%AD%E3%82%B9%E3%83%A9%E3%82%A4%E3%82%B9%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A8%E3%83%BC%E3%82%AF%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF%E3%83%81%E3%83%BC%E3%82%BA%E3%82%B1%E3%83%BC%E3%82%AD.jpg?s=612x612&w=is&k=20&c=kIMkCCnr7Fjh0vQsLwwiGRCOsDfKBy5ifL1R_YoL_Zc=" alt=チーズケーキ width="400">
+    <div>
+        <h2>📝 課題1: 自己紹介セクション作成</h2>
+        <p><strong>指示:</strong> 下記のHTMLコメント部分に、あなたの自己紹介を書いてください。</p>
+        <h3>自己紹介</h3>
+        <p>名前: AAA24007 大西紬生</p>
+        <p>職業: 大学生</p>
+        <p>趣味: 音楽鑑賞、映画鑑賞</p>
+        <p>✅ 完了したら、この課題は終了です</p>
+    </div>
+    <div>
+        <h2>📋 課題2: リスト作成</h2>
+        <p><strong>指示:</strong> 好きな食べ物を5つ、番号付きリスト（ol）で作成してください。</p>
+        <!-- ここに好きな食べ物のリストを作成してください -->
+        <ol>
+            <li>チーズケーキ</li>
+            <li>トマト</li>
+            <li>かぼちゃ（特にかぼちゃスイーツ）</li>
+            <li>固めのプリン</li>
+            <li>ぬれおかき</li>
+        </ol>
+    </div>
+    <div>
+        <h2>🔗 課題3: リンク作成</h2>
+        <p><strong>指示:</strong> 以下のリンクを作成してください：</p>
+        <ul>
+            <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+            <li><a href="https://github.com/" target="_blank">Github</a></li>
+            <li><a href="second.html">2ページ目へ</a></li>
+        </ul>
+    </div>
+</body>
+</html>
